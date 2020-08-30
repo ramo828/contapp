@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+mainClassName = 'contapp.Main'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation     'junit:junit:4.13'
+}
+run{
+    standardInput = System.in
+}
+jar {
+    manifest {
+        attributes 'Main-Class': 'contapp.Main'
+    }
+}
