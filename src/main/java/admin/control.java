@@ -15,7 +15,7 @@ public class control extends utilty {
     public static int unrun = 0;
     private static String userData;
     private static String userName = "admin";
-    private static String userPass = "ramiz123";
+    private static String userPass = "ramiz1234";
 
     public control(int i) {
         if (i != 0) {
